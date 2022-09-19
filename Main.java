@@ -6,6 +6,9 @@ public class Main {
       Marker m3 = new Marker(true, "black", "Expo");
 
 
-     
+     System.out.println(m1);
+     System.out.println(m2);
+     System.out.println(m3);
+
   }
 }
