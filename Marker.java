@@ -2,6 +2,7 @@ public class Marker {
   private boolean capStatus;
   private String markerColor;
   private String markerBrand;
+  private Sanatizer sanatizer1;
 
   public Marker() {
     capStatus = true;
@@ -17,6 +18,10 @@ public class Marker {
     markerColor = color;
     markerBrand = brand;
     
+  }
+  public Marker(Sanatizer Purell) {
+    this();
+    sanatizer1 = Purell; 
   }
 
   @Override
@@ -43,5 +48,8 @@ public class Marker {
   }
   public void setCap(boolean capStatus) {
     this.capStatus = capStatus;
+  }
+  public void sanitaryMarker() {
+    System.out.println("This marker is oozing out " + sanatizer1.getT());
   }
 }
